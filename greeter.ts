@@ -1,3 +1,4 @@
+// 类
 class Student {
   fullName: string;
   constructor (public firstName, public middleInitial, public lastName) {
@@ -5,11 +6,13 @@ class Student {
   }
 }
 
+// 接口
 interface Person{
   firstName: string;
   lastName: string;
 }
 
+// 类型注解
 function greeter(person: Person) {
   return "Hello, " + person.firstName + " " + person.lastName;
 }
