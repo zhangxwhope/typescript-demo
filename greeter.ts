@@ -19,5 +19,8 @@ function greeter(person: Person) {
 
 // let user = { firstName: 'Jane', lastName: 'User' };
 let user = new Student('Jane', 'M.', 'User')
+console.log(user, 'user')
 
-document.body.innerHTML = greeter(user);
+window.onload = function () {
+  document.body.innerHTML = greeter(user);
+}
